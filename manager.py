@@ -24,5 +24,3 @@ def organize(files_directory, folder_name, keywords):
         if all(keyword in file for keyword in keywords):
             shutil.move(f'{files_directory}/{file}', f'{new_directory}/{folder_name}')
             print(f'Your file: {file} has been moved to the folder: {folder_name}')
-     
-organize(files_directory, folder_name, keywords)
