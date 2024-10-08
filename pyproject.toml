@@ -1,0 +1,13 @@
+[project]
+name = "manager"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fire==0.5.0",
+    "pypdf==3.8.1",
+]
+
+[project.scripts]
+manager = "manager.__main__:main"

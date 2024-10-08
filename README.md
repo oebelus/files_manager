@@ -2,21 +2,61 @@
 
 I made this files organizer to make my life easier when I'm dealing with a bunch of messy files.
 
-## Sorter
+## Installation Instructions
 
-So, with the `sorter`, I can:
+To set up and use the organizer, follow these steps:
 
-- Organize my files into neat directories based on what I tell it.
-- See all the directories in the place I want to move my files to.
-- Read PDF files and show me the pages I want.
-- Rename my files or folders.
-- Delete files or folders.
-- Move files between different folders.
-- Get a list of all the commands I can use.
+1. Clone this repository to your local machine:
 
-#### How to Use sorter:
-Just start it up with `python sorter.py`. The program begins by asking you about your files' source and the target directory. It then shows a list of all the directories in the target directory and loops through files that are not directories one by one, asking you what you want to do with each of them.
-You can enter 'h' to get the commands' list: 
+```
+git clone https://github.com/oebelus/files_manager.git
+```
+
+2. Navigate to the project directory:
+
+```
+cd manager
+```
+
+3. Install the required dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+Now you're ready to organize your files! You can run:
+
+```
+manager organize  # For organizing files manually
+manager manage    # For grouping and moving files based on keywords
+```
+
+## Features
+
+### Organize
+
+The `organize` command is for grouping files by keywords and moving them into a new folder. For example, you can take all files named `SCREENSHOTS*` by entering `SCREENSHOTS` and move them into a new folder.
+
+How to use?
+
+```
+manager organize
+```
+
+And follow instructions.
+
+### Manage:
+
+The `manage` command helps you sort your files into specific directories, giving you control over how and where to move your files.
+
+How to use?
+
+```
+manager manage
+```
+
+You can enter 'h' to get the commands' list:
+
 ```
 --- Enter your command: h
 > Enter a number to access the directory
@@ -34,7 +74,9 @@ You can enter 'h' to get the commands' list:
 > Enter (-) to move to the next file
 > Enter (q) to exit
 ```
-And the folders are displayed like this: 
+
+And the folders are displayed like this:
+
 ```
 (1)> Articles
 (2)> Biology
@@ -44,15 +86,3 @@ And the folders are displayed like this:
 (6)> Pictures
 (7)> Physics
 ```
-
-## Manager
-
-Manager is for grouping a bunch of files in 1 directory by common keywords and moving them all to another directory. Like taking all the trailing 'SCREENSHOTS*.jpg' and putting them back to the folder where they belong.
-
-#### How to Use manager:
-
-- Tell it where your messy files are.
-- Give it a spot to create the new folder.
-- Think of a cool name for the new folder.
-- Tell it how many keywords you would enter.
-- Start typing the keywords one by one as it asks.

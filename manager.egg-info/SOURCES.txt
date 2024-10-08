@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+manager/__init__.py
+manager/__main__.py
+manager/manage.py
+manager/organize.py
+manager/utils.py
+manager.egg-info/PKG-INFO
+manager.egg-info/SOURCES.txt
+manager.egg-info/dependency_links.txt
+manager.egg-info/entry_points.txt
+manager.egg-info/requires.txt
+manager.egg-info/top_level.txt
