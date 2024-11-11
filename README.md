@@ -15,7 +15,7 @@ git clone https://github.com/oebelus/files_manager.git
 2. Navigate to the project directory:
 
 ```
-cd manager
+cd files_manager
 ```
 
 3. Install the required dependencies:
@@ -43,7 +43,13 @@ How to use?
 manager organize
 ```
 
-And follow instructions.
+Follow the prompts:
+
+- Enter your files directory (e.g., . for the current directory).
+- Enter the directory where you want to create the folder.
+- Enter a name for your folder.
+- Specify the number of keywords to be used for filtering files. The files will be organized into the folder based on these common keywords.
+- You will be then prompted to enter the keywords one by one.
 
 ### Manage:
 
