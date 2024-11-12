@@ -13,8 +13,7 @@ class Manage:
             if command == 'new':
                 files_directory = input("Enter your files directory: ")
                 files_directory.replace('\\', '/')
-                new_directory = input('Enter the directory where you want to create the folder(s): ')
-                target_directory = new_directory
+                target_directory = files_directory
             
                 files = os.listdir(files_directory)
                 non_folders = [file for file in files if os.path.isfile(os.path.join(files_directory, file))]
@@ -86,7 +85,7 @@ class Manage:
                                 display_directories(directories)
                                 command = input("--- Enter your command: ")
                             elif command == '..':
-                                old_directory = target_directory
+                                old_directory = os.getcwd()
                                 target_directory = get_parent_directory(old_directory)
                                 directories = get_directories(target_directory)
                                 display_directories(directories)
